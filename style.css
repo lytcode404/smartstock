@@ -1,0 +1,161 @@
+body {
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 82.7, "YTLC" 500;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgb(94, 204, 248) 0%,
+    rgb(117, 203, 224) 35%,
+    rgba(0, 212, 255, 1)
+  );
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(207, 192, 192, 0.1);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card1 {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  background-color: rgb(59 233 91);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  text-align: left;
+  padding: 0 20px;
+  height: 200px;
+}
+
+h4 {
+  color: #333;
+  font-size: 13px;
+  margin: 0;
+}
+
+h2 {
+  color: #f2f4f7;
+  font-size: 32px;
+  margin: 0;
+}
+
+.details li {
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  font-weight: 400;
+  color: black;
+  background-color: rgb(246, 255, 0);
+  list-style: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.progress-container {
+  position: relative;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring-circle {
+  fill: transparent;
+  stroke-width: 8;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  transition: stroke-dashoffset 0.3s ease-in-out;
+}
+
+.progress-ring-circle {
+  stroke: lightgreen; /* Default color */
+}
+
+/* Change the color based on score */
+.progress-ring-circle.less-than-70 {
+  stroke: orange;
+}
+
+.progress-ring-circle.less-than-50 {
+  stroke: red;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.details .f1 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.details .f1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 52%;
+  height: 42px;
+  margin-bottom: 6px;
+  background-color: rgb(235, 227, 14);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* body {
+  background-image: url('background.png'); 
+  background-size: fit; 
+  background-repeat: no-repeat; 
+  max-width: 400px;
+  height: 400px;
+  background-position: center;
+} */
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  z-index: -999;
+}
+
+.overlay {
+  background: linear-gradient(
+    90deg,
+    rgb(40, 140, 180) 0%,
+    rgb(104, 157, 244) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-size: cover;
+  background-position: center;
+  height: full;
+  position: relative;
+}
+
+.random {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  z-index: 9;
+  width: full;
+  height: full;
+  background: red;
+}

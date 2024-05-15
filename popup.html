@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Extension Popup</title>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,82.7,307;1,6..12,82.7,307&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+
+
+
+          <div class="card1">
+            <div class="progress-container">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="progress-ring-circle" cx="60" cy="60" r="50"></circle>
+              </svg>
+              <div class="text-container">
+                <h4>Stock Score</h4>
+                <h2 id="productScore">73</h2>
+              </div>
+            </div>
+          </div>
+          
+        <div class="details">
+            <ul>
+                <li>Stock Price: 2,466 <span id="price"></span></li>
+                <li>Trade Vol: 4.34 Lakhs <span id="rating"></span></li>
+                <li>Traded Value: 107.29 Crores<span id="numberOfRatings"></span></li>
+                <li>Total Market Cap: 2,37,761.16<span id="numReviews"></span></li>
+                <li>Free Float Market Cap: 87,971.63 <span id="warranty"></span></li>
+                <li>Impact Cost: 0.03<span id="returnPolicy"></span></li>
+                <li>52 week High/Low ratio: 1.30<span id="reviewArr"></span></li>
+            </ul>
+
+        <!-- Reference the external JavaScript file -->
+        <script src="./dist/popup2.js" type="module"></script>
+        <!-- <script src="./popup.js" type="module"></script> -->
+    </body>
+</html>

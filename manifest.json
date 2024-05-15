@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "name": "Smart Stock Analyser",
+    "version": "1.0.0",
+    "description": "calculate the score and easily anlayse any stock given on the nse website",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon16.png",
+        "128": "icon16.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon16.png",
+            "128": "icon16.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage",
+        "scripting",
+        "downloads"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    }
+}
